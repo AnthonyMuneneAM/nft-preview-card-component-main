@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-mainbg: hsl(217, 54%, 11%);
+    --very-dark-blue-cardbg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--very-dark-blue-mainbg);
+}
+.card{
+    background-color: var(--very-dark-blue-cardbg);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .15);
+    padding: 1.1rem;
+    border-radius: 20px;
+    width: 330px;
+    font-size: 18px;
+}
+.card .img img{
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+}
+.card .heading h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1.1rem;
+}
+.card .details p{
+    font-weight: 300;
+    color: var(--soft-blue);
+    margin-bottom: 1.1rem;
+}
+.card .dets-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.card .dets-row .price-col p{
+    color: var(--cyan);
+    font-weight: 600;
+    position: relative;
+}
+.card .dets-row .price-col .icon-ethereum{
+    position: absolute;
+    left: 0;
+    background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+    background-image: url('../images/icon-ethereum.svg');
+}
+.card .dets-row .time-col{
+    color: var(--soft-blue);
+    font-weight: 400;
+}
+.card hr{
+    border: none;
+    background-color: var(--soft-blue);
+    height: 0.3px;
+    margin-bottom: 1rem;
+}
+.card .creator{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1.1rem;
+}
+.card .creator img{
+	width: 30px;
+	height: auto;
+	border: 1px solid var(--white);
+	border-radius: 50%;
+}
+.card .creator p{
+	color: var(--soft-blue);
+	font-size: 0.9rem;
+	font-weight: 300;
+	margin-left: 10px;
+}
+.card .creator p span{
+	color: var(--white);
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
