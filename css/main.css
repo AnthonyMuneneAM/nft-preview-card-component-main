@@ -31,12 +31,17 @@ main{
     max-width: 100%;
     border-radius: 10px;
     margin-bottom: 1.2rem;
+    cursor: pointer;
 }
 .card .heading h1{
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--white);
     margin-bottom: 1.1rem;
+    cursor: pointer;
+}
+.card .heading h1:hover{
+    color: var(--cyan);
 }
 .card .details p{
     font-weight: 300;
@@ -90,14 +95,10 @@ main{
 	font-weight: 300;
 	margin-left: 10px;
 }
-.card .creator p span{
+.card .creator p span a{
 	color: var(--white);
+    text-decoration: none;
 }
-
-.attribution{
-    font-size: 11px;
-    text-align: center;
-}
-.attribution a{
-    color: hsl(228, 45%, 44%);
+.card .creator p span a:hover{
+    color: var(--cyan);
 }
