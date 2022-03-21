@@ -22,7 +22,7 @@ main{
 .card{
     background-color: var(--very-dark-blue-cardbg);
     box-shadow: 0 2px 16px rgba(0, 0, 0, .15);
-    padding: 1.1rem;
+    padding: 1.3rem;
     border-radius: 20px;
     width: 330px;
     font-size: 18px;
@@ -53,23 +53,23 @@ main{
     justify-content: space-between;
     margin-bottom: 1rem;
 }
-
-.card .dets-row .price-col p{
+.card .dets-row .price-col .price{
     color: var(--cyan);
-    font-weight: 600;
-    position: relative;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
 }
-.card .dets-row .price-col .icon-ethereum{
-    position: absolute;
-    left: 0;
-    background-size: cover;
-	background-repeat: no-repeat;
-	display: inline-block;
-    background-image: url('../images/icon-ethereum.svg');
+.card .dets-row .price-col .price img{
+    margin-right: 10px;
 }
-.card .dets-row .time-col{
+.card .dets-row .time-col .time{
     color: var(--soft-blue);
     font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.card .dets-row .time-col .time img{
+    margin-right: 5px;
 }
 .card hr{
     border: none;
